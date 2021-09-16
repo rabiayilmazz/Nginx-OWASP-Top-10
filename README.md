@@ -13,9 +13,9 @@
 * ./build.sh
 * ./configure
 * make
-make install
-cd ..
-sudo git clone --depth 1 https://github.com/SpiderLabs/ModSecurity-nginx.git
+```make install```
+```cd ..```
+```sudo git clone --depth 1 https://github.com/SpiderLabs/ModSecurity-nginx.git```
 nginx -v
 sudo wget http://nginx.org/download/nginx-1.18.0.tar.gz
 ls
