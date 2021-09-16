@@ -1,8 +1,6 @@
 # Nginx-OWASP-Top-10
-* ```sudo apt-get install bison build-essential ca-certificates curl dh-autoreconf doxygen 
-  flex gawk git iputils-ping libcurl4-gnutls-dev libexpat1-dev libgeoip-dev liblmdb-dev 
-  libpcre3-dev libpcre++-dev libssl-dev libtool libxml2 libxml2-dev libyajl-dev locales 
-  pkg-config wget zlib1g-dev zlibc libgd-dev
+```
+sudo apt-get install bison build-essential ca-certificates curl dh-autoreconf doxygen flex gawk git iputils-ping libcurl4-gnutls-dev libexpat1-dev libgeoip-dev liblmdb-dev libpcre3-dev libpcre++-dev libssl-dev libtool libxml2 libxml2-dev libyajl-dev locales pkg-config wget zlib1g-dev zlibc libgd-dev
 sudo apt install git
 cd /opt
 git clone https://github.com/SpiderLabs/ModSecurity
@@ -49,7 +47,7 @@ cp /opt/ModSecurity/modsecurity.conf-recommended /etc/nginx/modsec/modsecurity.c
 ModemManager 
 cd ModSecurity
 ls
-nano /etc/nginx/modsec/modsecurity.conf ```
+nano /etc/nginx/modsec/modsecurity.conf
 nano /etc/nginx/modsec/main.conf
 nano /etc/nginx/sites-available/default 
 sudo systemctl restart nginx
@@ -57,5 +55,6 @@ sudo systemctl status nginx
 ifconfig
 nano /var/log/modsec_audit.log 
 cat  /var/log/modsec_audit.log 
-cat  /var/log/nginx/access.log 
+cat  /var/log/nginx/access.log  
+```
 
