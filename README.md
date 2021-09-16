@@ -1,5 +1,5 @@
 # Nginx-OWASP-Top-10
-```
+```bash
 sudo apt-get install bison build-essential ca-certificates curl dh-autoreconf doxygen flex gawk git iputils-ping libcurl4-gnutls-dev libexpat1-dev libgeoip-dev liblmdb-dev libpcre3-dev libpcre++-dev libssl-dev libtool libxml2 libxml2-dev libyajl-dev locales pkg-config wget zlib1g-dev zlibc libgd-dev
 sudo apt install git
 cd /opt
