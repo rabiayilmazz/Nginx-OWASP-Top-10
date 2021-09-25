@@ -85,26 +85,3 @@ cat  /var/log/nginx/access.log
     *  http://192.168.1.44/login.php?xml=%3C!ENTITY%20ac%20SYSTEM%20%22php://filter/read=convert.base64-encode/resource=http://example.com/viewlog.php%22%3E]%3E
     *  http://192.168.1.44/login.php?xml=%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20width=%22300%22%20version=%221.1%22%20height=%22200%22%3E%20%3Cimage%20xlink:href=%22expect://ls%22%3E%3C/image%3E%20%3C/svg%3E
 * Access Control with PHP http://192.168.1.44/login.php?xml=%3C!ENTITY%20ac%20SYSTEM%20%22php://filter/read=convert.base64-encode/resource=http://example.com/viewlog.php%22%3E]%3E
-
-  •	Broken Access Control; 
-o	http://192.168.1.44/novel?file=../../../etc/passwd urli ile passwd dosyasına erişmeye çalıştım. Aldığım log kaydı (Şekil 4) 
-•	Cryptographic Failures
-o	Bu madde için ilgili bir url bulamadım. 2017 kaydına göre Sensitive data exposure olarak bilinir. Hassas verilerin açıklığından kaynaklanır.
-•	Injection 
-o	http://192.168.1.44/?id=8 or 'r'='r' urli ile gerçekleştirdiğim atağın log kaydını aldım.og kaydı SQLI şeklinde çıktı verdi. (Şekil 5)
-•	Insecure Design
-o	Yazılım tasarımlarından oluşan bu açığa uygun da bir url bualamadım.
-•	Security Misconfiguration
-o	http://192.168.1.44/rabia.php?PHPSESSID=qwrtop95340hhty49gjbc84 url i ile session fixation kuralına yakalayarak loğa düşürdüm. (Şekil 6)
-•	Vulnerable and Outdated Components
-o	http://192.168.1.44/rabia.php?xml=%3C!ENTITY%20ac%20SYSTEM%20%22php://filter/read=convert.base64-encode/resource=http://example.com/viewlog.php%22%3E]%3E urli ile php conpanent atağının loğunu kaydettim. (Şekil 7)
-•	Indentification and Autentication Failures
-o	http://192.168.1.44/resetpw?login&token=tester&dfhjgwep9*laksjdf78 urli ile yaptım. Log kaydı (Şekil 8)
-•	Software and Data Integrity Failures
-o	Yazılım ve veri bütünlüğü hatalarıdır. Bütünlük ihlallerine karşı koruma sağlayan alt yapılarla ilgilidir. Bir uygulamanın güvenilir olmayan kaynaklardan ve cdn lerde gelen eklentiler buna örnektir. 
-o	Buna uygun bir url bulamadım
-•	Security Logging and Monitoring Failures
-o	Hedefteki log dosyasına ulaşmaya çalışarak atağı yakalamaya çalıştım. http://192.168.1.44/var/log/nginx/monitoring.log log kaydı (Şekil 9).
-•	Server Side Request Forgery
-o	http://192.168.1.44/jsp?rdoSearch=name&txtSearchname=sdf&txtSearchkey=&txtSearchfor=&selfor=Business+location&btnSubmit=Search&operator=http://192.168.1.44:7001 RFI olarak loğa düşen kayıt SSRF atağından kaynaklanıyor. Log kaydı (Şekil 10)
-
