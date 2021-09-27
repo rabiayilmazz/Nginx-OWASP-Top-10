@@ -67,7 +67,7 @@ cat  /var/log/nginx/access.log
 * A07:2021-Identification and Authentication Failures was previously Broken Authentication 
 * A08:2021-Software and Data Integrity Failures 
 * A09:2021-Security Logging and Monitoring Failures 
-* A10:2021-Server-Side Request Forgery
+* A10:2021-Server-Side Request Forgery SSRF
 
 ## Attacs
 * RFI http://192.168.1.44/vuln_page.php?file=http://192.168.1.44/backdoor_
