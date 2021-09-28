@@ -70,7 +70,7 @@ cat  /var/log/nginx/access.log
 * A09:2021-Security Logging and Monitoring Failures 
 * A10:2021-Server-Side Request Forgery SSRF
 
-## Attacs
+## Attacks
 * Broken Authentication http://192.168.1.11/authentication.php?JSESSIONID=0000d8eyYq3L0z2fgq10m4v-rt4:-1
 * Cryptographic Failures 
 * SQLI https://192.168.1.44/?id=3 or 'a'='a'
