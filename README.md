@@ -57,7 +57,7 @@ nano /var/log/modsec_audit.log
 cat  /var/log/modsec_audit.log 
 cat  /var/log/nginx/access.log  
 ```
-</br>
+
 ## Owasp Top 10 Lists
 * A01:2021-Broken Access Control 
 * ***A02:2021-Cryptographic Failures***
