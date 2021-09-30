@@ -58,7 +58,7 @@ cat  /var/log/modsec_audit.log
 cat  /var/log/nginx/access.log  
 ```
 
-(video)[https://www.youtube.com/watch?v=5eRxOYbaIEI&t=1488s]
+[video](https://www.youtube.com/watch?v=5eRxOYbaIEI&t=1488s)
 
 ## Owasp Top 10 Lists
 * A01:2021-Broken Access Control 
