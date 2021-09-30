@@ -1,4 +1,8 @@
 # Nginx-OWASP-Top-10
+
+## [Video](https://www.youtube.com/watch?v=5eRxOYbaIEI&t=1488s)
+## [Documentation](https://www.linode.com/docs/guides/securing-nginx-with-modsecurity/)
+
 ```bash
 sudo apt-get install bison build-essential ca-certificates curl dh-autoreconf doxygen flex gawk git iputils-ping libcurl4-gnutls-dev libexpat1-dev libgeoip-dev liblmdb-dev libpcre3-dev libpcre++-dev libssl-dev libtool libxml2 libxml2-dev libyajl-dev locales pkg-config wget zlib1g-dev zlibc libgd-dev
 sudo apt install git 
@@ -57,8 +61,6 @@ nano /var/log/modsec_audit.log
 cat  /var/log/modsec_audit.log 
 cat  /var/log/nginx/access.log  
 ```
-
-[video](https://www.youtube.com/watch?v=5eRxOYbaIEI&t=1488s)
 
 ## Owasp Top 10 Lists
 * A01:2021-Broken Access Control 
